@@ -1,0 +1,62 @@
+<!-- Omega Team - CS419_400 WebCrawler -->
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Omega WebCrawler</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script language="javascript" type="text/javascript" src="JavaScript/p5.min.js"></script>
+    <script language="javascript" type="text/javascript" src="JavaScript/sketch.js"></script>
+    <script language="javascript" type="text/javascript" src="JavaScript/omega_JS.js"></script>
+    <script language="javascript" type="text/javascript" src="JavaScript/tree.js"></script>
+  </head>
+  <body>
+    <div>
+      <!-- Spider portion of image found @ http://marketingtools247.com/research-tools/web-crawlers/ -->
+      <img src="IMG/Title.JPG" class="banner">
+    </div>
+    <div id="form">
+      <fieldset>
+      <legend>Crawler Options</legend>
+      <div>
+        <label class="flt">Starting URL:</label>
+        <span>
+          <input type="text" id="url" class="var_width"/>
+        </span>
+      </div>
+      <div>
+        <span class="flt">
+          <label>Max Pages:</label>
+          <input type="number" id="max"/>
+          <label>Terminate Word/Phrase:</label>
+        </span>
+        <span>
+          <input type="text" id="term" class="var_width"/>
+        </span>        
+      </div>
+      <div>
+        <label>Search Method:</label>
+        <input type="radio" name="method" id="method" value="BF" checked="checked">Breadth-First
+        <input type="radio" name="method" value="DF">Depth-First
+      </div>
+      <div>
+        <label class="flt">Search History:</label>
+        <span>
+          <select readonly id="history" class="var_width" onchange="lockInput()">
+          </select>
+        </span>
+      </div>
+      <div>
+        <button type="button" onclick="reset()">Reset</button>
+        <button type="button" onclick="clear_history()">Clear Search History</button>
+        <button type="button" onclick="new_crawl()" id="submit">Submit</button>
+      </div>
+      </fieldset>
+    </div>
+    <!-- Remaining Sections are utilized and populated by JS functions. -->
+    <div id="table">
+    </div>
+    <div id="vis">
+    </div>
+  </body>
+</html>

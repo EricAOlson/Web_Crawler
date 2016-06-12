@@ -1,0 +1,50 @@
+/***  Team Omega - CS419_400 WebCrawler ***/
+
+/* Page Styling */
+html {margin-bottom: 80px;}
+img.banner {float: none;
+            margin-left: 20px;}
+
+
+/* Input Form Styling */
+#form>fieldset>div {margin-top: 5px;
+           margin-bottom: 5px;
+           margin-left: 3px;}
+legend {font-weight: bold;}
+#form {width: 720px;}
+.flt {float: left;}
+.var_width {width: 100%;}
+span {display: block;
+      overflow: hidden;
+      padding-right: 10px;}
+#max {width: 35px;}
+#submit {float: right;
+         margin-right: 10px;}
+#clock {margin-left: 250px;}
+
+/* Table Styling */
+caption {color: #000080;
+         font-weight: bold;
+         font-size: 160%;
+         min-width: 720px;}
+#table {margin-top: 20px;
+        border-left: thick solid black;}
+table, td, th {border: 2px solid gray;
+               word-wrap: break-word;
+               max-width: 450px;}
+.term {border: 2px solid red;}
+tbody>tr>td:nth-child(3) {min-width: 120px;}
+th {color: white;
+    background-color: #000080;}
+table+p {margin-top: 2px;
+         margin-left: 55px;}
+
+/* Vis Styling */
+#vis_header {width: 720px;
+             text-align: center;}
+#vis {margin-top: 20px;
+      border-left: thick solid black;}
+img {margin-right: 10px;
+     float: left;}
+#control {margin-top: 5px;
+          margin-left: 70px;}
